@@ -1,0 +1,108 @@
+/* hero */
+.hero {
+  background: linear-gradient(135deg, #c4c3ba, #000); /* dégradé coloré */
+  color: white;
+  text-align: center;
+  padding: 80px 20px; /* grand espace autour pour bien respirer */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  margin-bottom: 40px; /* espace avec le reste du contenu */
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-family: 'Arial Black', sans-serif; /* titre impactant */
+}
+
+.hero p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  font-family: 'Verdana', sans-serif;
+}
+
+/* footer principal */
+footer {
+  background: linear-gradient(135deg, #c4c3ba, #000);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer-section p,
+.footer-section li {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 4px 0;
+}
+
+.footer-section a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-credit {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* icônes réseaux sociaux */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 1.5rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Instagram : dégradé officiel */
+.social-icons a.instagram i {
+  background: linear-gradient(
+    45deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+  background-clip: text;
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+}
+
+/* TikTok : cyan / rouge officiel */
+.social-icons a.tiktok i {
+  color: #ffffff;
+  text-shadow: -1px 0 #69C9D0, 1px 0 #EE1D52, 0 -1px #EE1D52, 0 1px #EE1D52;
+}
+
+/* YouTube : rouge officiel */
+.social-icons a.youtube i {
+  color: #FF0000;
+}
+/* Hover commun pour toutes les icônes */
+.social-icons a:hover {
+  transform: scale(1.15);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
