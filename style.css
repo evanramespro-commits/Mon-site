@@ -1,9 +1,24 @@
-/* hero */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+display: flex;
+flex-direction: column;
+}
+
+
+main {
+    flex: 1;
+}
+
+/* header */
 .hero {
   background: linear-gradient(135deg, #c4c3ba, #000); /* dégradé coloré */
   color: white;
   text-align: center;
-  padding: 80px 20px; /* grand espace autour pour bien respirer */
+  padding: 15px 20px; /* grand espace autour pour bien respirer */
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   margin-bottom: 40px; /* espace avec le reste du contenu */
@@ -21,12 +36,21 @@
   font-family: 'Verdana', sans-serif;
 }
 
+footer {
+  background: linear-gradient(135deg, #c4c3ba, #000);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+
 /* footer principal */
 footer {
   background: linear-gradient(135deg, #c4c3ba, #000);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   color: #ffffff;
-  padding: 40px 20px;
+  padding: 15px 20px;
   text-align: center;
 }
 
@@ -105,4 +129,48 @@ footer {
 .social-icons a:hover {
   transform: scale(1.15);
   box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.hero h1 {
+  position: relative;
+  display: inline-block;
+}
+
+.hero h1::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  width: 0%;
+  height: 3px;
+  background-color: #ffffff; /* couleur du soulignement */
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.hero h1:hover::after {
+  width: 100%;
+}
+ul li h3 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* ligne animée */
+ul li h3::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0%;
+  height: 3px;
+  background-color: #c4c3ba; /* couleur différente du titre principal */
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+/* animation au survol */
+ul li h3:hover::after {
+  width: 100%;
 }
